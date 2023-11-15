@@ -1,0 +1,133 @@
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    background-color: black;
+}
+
+.container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1px;
+    height: 100%;
+}
+
+#grid-container > div {
+    display: grid;
+    overflow: auto;
+    justify-items: center;
+    background: #fff;
+}
+
+.div1 { grid-area: 1 / 9 / 2 / 10; }
+.div2 { grid-area: 1 / 8 / 2 / 9; }
+.div3 { grid-area: 1 / 7 / 2 / 8; }
+.div4 { grid-area: 1 / 5 / 2 / 7; }
+.div5 { grid-area: 1 / 4 / 2 / 5; }
+.div6 { grid-area: 1 / 3 / 2 / 4; }
+.div7 { grid-area: 1 / 2 / 2 / 3; }
+.div8 { grid-area: 1 / 1 / 2 / 2; }
+.div9 { grid-area: 2 / 9 / 3 / 10; }
+.div10 { grid-area: 2 / 8 / 3 / 9; }
+.div11 { grid-area: 2 / 7 / 3 / 8; }
+.div12 { grid-area: 2 / 6 / 3 / 7; }
+.div13 { grid-area: 2 / 5 / 3 / 6; }
+.div14 { grid-area: 2 / 4 / 3 / 5; }
+.div15 { grid-area: 2 / 3 / 3 / 4; }
+.div16 { grid-area: 2 / 2 / 3 / 3; }
+.div17 { grid-area: 2 / 1 / 3 / 2; }
+.div18 { grid-area: 3 / 8 / 4 / 10; }
+.div19 { grid-area: 3 / 7 / 4 / 8; }
+.div20 { grid-area: 3 / 6 / 4 / 7; }
+.div21 { grid-area: 3 / 5 / 4 / 6; }
+.div22 { grid-area: 3 / 4 / 4 / 5; }
+.div23 { grid-area: 3 / 3 / 4 / 4; }
+.div24 { grid-area: 3 / 1 / 4 / 3; }
+
+.title-jp {
+    writing-mode: vertical-rl;
+    align-self: center;
+}
+
+.photo {
+    max-width: 100%;
+    max-height: 250px;
+    align-self: center;
+}
+
+#block-click {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#div1-en,
+#div2-en,
+#div3-en,
+#div5-en,
+#div6-en,
+#div7-en,
+#div8-en,
+#div9-en,
+#div10-en,
+#div11-en,
+#div12-en,
+#div13-en,
+#div14-en,
+#div15-en,
+#div16-en,
+#div17-en,
+#div19-en,
+#div20-en,
+#div21-en,
+#div22-en,
+#div23-en {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 10%;
+    right: 10%;
+    transform: translateY(-50%);
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    background-color: rgba(255, 255, 255, .9);
+}
+
+.close-button {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    opacity: .7;
+}
+.close-button:hover {
+    opacity: .9;
+}
+
+.popup-title {
+    padding: 10px 45px 10px 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.popup-body {
+    padding: .75em 1em;
+}
