@@ -82,6 +82,7 @@ body {
 #div1-en,
 #div2-en,
 #div3-en,
+#div4-en,
 #div5-en,
 #div6-en,
 #div7-en,
@@ -95,11 +96,13 @@ body {
 #div15-en,
 #div16-en,
 #div17-en,
+#div18-en,
 #div19-en,
 #div20-en,
 #div21-en,
 #div22-en,
-#div23-en {
+#div23-en,
+#div24-en {
     display: none;
     position: fixed;
     top: 50%;
@@ -136,6 +139,11 @@ body {
 
 .popup-body em {
     font-size: 18px;
+}
+
+.popup-image {
+    max-width: 100%;
+    max-height: 417px;
 }
 
 /* For mobile phones: */
