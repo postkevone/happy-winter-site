@@ -126,6 +126,9 @@
                 <img class="photo" src="img/tateyama.jpg" alt="Tateyama">
             </div>
         </div>
+        <div id="shutten">
+            Ken, A. & Yukio, M., (2000), Gensyoku shinnihonbungakusi, [Original color new history of Japanese literature], (p.266-267), Buneidou. 
+        </div>
         <!--BLOCK CLICK LAYER-->
         <div id="block-click"></div>
         <!--TRANSLATIONS-->
@@ -541,11 +544,13 @@
             document.getElementById(str).style.display = "block";
             document.getElementById("block-click").style.display = "block";
             document.getElementById("grid-container").style.filter = "blur(2px)";
+            document.getElementById("shutten").style.filter = "blur(2px)";
         }
         function closePopup(str) { 
             document.getElementById(str).style.display = "none";
             document.getElementById("block-click").style.display = "none";
             document.getElementById("grid-container").style.filter = "blur(0px)";
+            document.getElementById("shutten").style.filter = "blur(2px)";
         }
     </script>
 </body>
