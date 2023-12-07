@@ -54,6 +54,10 @@ body {
     display: none;
 }
 
+.reference {
+    font-size: 14px;
+}
+
 .div1 { grid-area: 1 / 9 / 2 / 10; }
 .div2 { grid-area: 1 / 8 / 2 / 9; }
 .div3 { grid-area: 1 / 7 / 2 / 8; }
