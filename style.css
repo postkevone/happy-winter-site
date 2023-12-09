@@ -193,6 +193,7 @@ body {
 
 .popup-body button {
     padding: 0 .25em;
+    line-height: 16px;
 }
 
 .btn-kor,
